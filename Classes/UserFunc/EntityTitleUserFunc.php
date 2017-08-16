@@ -27,13 +27,15 @@ class EntityTitleUserFunc
         $table = $params['table'];
 
         $row = $params['row'];
-        $uid = $row['uid'];
-        $title = $row['title'];
+        $uid = (int)$row['uid'];
+        if ($uid) {
+            $title = $row['title'];
 
-        static::increaseMethodCallCount($table);
-        static::storeTitleInLog($table, $uid, $title);
+            static::increaseMethodCallCount($table);
+            static::storeTitleInLog($table, $uid, $title);
 
-        self::writeLog();
+            self::writeLog();
+        }
 
         $params['title'] = $title;
     }

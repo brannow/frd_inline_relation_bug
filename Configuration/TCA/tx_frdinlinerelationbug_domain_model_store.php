@@ -119,7 +119,7 @@ return [
             ],
         ],
 
-        'city' => [
+        /*'city' => [
             'exclude' => true,
             'label' => 'City',
             'config' => [
@@ -129,6 +129,6 @@ return [
                 'minitems' => 0,
                 'maxitems' => 1,
             ],
-        ],
+        ],*/
     ],
 ];

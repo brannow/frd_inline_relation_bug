@@ -1,0 +1,21 @@
+{
+    "name": "frd/frd-inline-relation-bug",
+    "type": "typo3-cms-extension",
+    "description": "Sample Ext for an inline relation Bug",
+    "author": [
+        {
+            "name": "Benjamin Rannow",
+            "email": "b.rannow@familie-redlich.de",
+            "role": "Developer",
+            "homepage": "http://www.familie-redlich.de"
+        }
+    ],
+    "require": {
+        "typo3/cms-core": "^8.6.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "FRD\\FrdInlineRelationBug\\": "Classes"
+        }
+    }
+}
